@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Env
+.env
+.env.local
+**/.env
+!**/.env.example
+
+# Next.js
+frontend/.next/
+frontend/out/
+
+# Logs / misc
+*.log
+.DS_Store
+
+# Local Postgres data (dev)
+pgdata/

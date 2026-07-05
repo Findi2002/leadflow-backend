@@ -1,0 +1,22 @@
+# Spins up PostgreSQL for local Project Evergreen development.
+#   docker compose up -d
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: evergreen-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: evergreen
+    ports:
+      - "5432:5432"
+    volumes:
+      - evergreen_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  evergreen_pgdata:
