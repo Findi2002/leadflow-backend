@@ -4,7 +4,7 @@
 |---|---|
 | **Document ID** | EVA-01 |
 | **Status** | Active |
-| **Version** | 1.0.0 |
+| **Version** | 1.0.1 |
 | **Owner** | Architecture Guild (interim: founding team) |
 | **Last updated** | 2026-07-05 |
 
@@ -315,9 +315,10 @@ change set. Synonyms listed as *deprecated* must not appear in new writing.
 
 1. When (headcount trigger) does the Architecture Guild become a real multi-person
    body with rotation?
-2. Should Standards documents (consumer-facing, legally sensitive) live under
-   `docs/architecture/` governance or a separate, stricter publication pipeline?
-   (Leaning: stricter pipeline from `V2` — see EVA-07 Open Questions.)
+2. ~~Should Standards documents (consumer-facing, legally sensitive) live under
+   `docs/architecture/` governance or a separate, stricter publication pipeline?~~
+   **Resolved:** stricter pipeline —
+   [EVA-07 §6.6](EVERGREEN_STANDARD_LIBRARY.md#66-publication-pipeline-resolves-eva-01-open-question-2).
 3. Do we adopt a docs linter (e.g., Vale + link checker) in MVP or defer to V1?
 
 ## 11. Decision Log
